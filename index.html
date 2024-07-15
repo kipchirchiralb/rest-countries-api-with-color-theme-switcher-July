@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Countries</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="light">
+        <h1>Where in the world?</h1>
+        <button id="theme-changer"> <ion-icon name="moon"></ion-icon> Dark Mode </button>
+    </header>
+    <main  class="light">
+      
+        <div class="actions">
+            <form action="">
+                <label for="search"> <ion-icon name="search-outline"></ion-icon> </label>
+                <input type="text" id="search" name="search" placeholder="Search For a Country...">
+            </form>
+            <div class="filter">
+                <button>Filter by Region</button>
+                <ul id="regions">
+                    <li>
+                        <button> Africa </button>
+                    </li>
+                    <li>
+                        <button> Asia </button>
+                    </li>
+                    <li>
+                        <button> America </button>
+                    </li>
+                    <li>
+                        <button> Europe </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="countries"></div>
+    </main>
+    <script src="index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
